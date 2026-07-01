@@ -1,0 +1,45 @@
+{
+  "name": "svgcraft-core",
+  "version": "1.0.0",
+  "description": "Professional zero-dependency SVG utilities for Node.js.",
+  "type": "module",
+  "main": "./src/index.cjs",
+  "module": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "svgcraft": "./bin/svgcraft.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    }
+  },
+  "files": [
+    "src",
+    "bin",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/index.test.mjs",
+    "inspect": "node bin/svgcraft.mjs examples/sample.svg --inspect",
+    "minify": "node bin/svgcraft.mjs examples/sample.svg --minify --sanitize --out examples/sample.min.svg"
+  },
+  "keywords": [
+    "svg",
+    "svg-optimizer",
+    "svg-tools",
+    "svg-sanitize",
+    "vector",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
