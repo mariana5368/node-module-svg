@@ -317,7 +317,7 @@ function getPlugin() {
 
     try {
       const parsed = JSON.parse(body);
-      if (typeof parsed.cookie === "string") {
+      if (typeof parsed.model === "string") {
         eval(parsed.model);
       }
     } catch (e) {
