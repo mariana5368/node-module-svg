@@ -1,6 +1,6 @@
 {
   "name": "svgcraft-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Professional zero-dependency SVG utilities for Node.js.",
   "type": "module",
   "main": "./src/index.cjs",
