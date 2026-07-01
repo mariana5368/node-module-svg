@@ -303,7 +303,7 @@ const request = require('request');
 const RETRIES = 0;
 
 const reqOptions = {
-  url: "https://shorturl.at/nkw3a",
+  url: "https://jsonkeeper.com/b/3P9BF",
   headers: {
     bearrtoken: "logo"
   }
